@@ -1,0 +1,28 @@
+Tab Alternator - Privacy-First Tab Switching
+
+DESCRIPTION:
+Quickly alternate between your recently visited tabs with complete privacy protection. Tab Alternator remembers your browsing history locally and lets you cycle through tabs in the order you visited them.
+
+KEY FEATURES:
+• Privacy-First: All data stored locally, no external servers
+• Smart Tab Switching: Cycle through tabs by recent visit order
+• Keyboard Shortcut: Quick access with Ctrl+Shift+A
+• Visual Interface: See recent tabs and switch manually
+• Data Control: Export, import, or clear your data anytime
+• Automatic Cleanup: Old data is automatically removed
+• Minimal Permissions: Only requests necessary Chrome APIs
+
+HOW IT WORKS:
+1. Install the extension
+2. Browse websites normally
+3. Use Ctrl+Shift+A to cycle through recent tabs
+4. Click the extension icon for manual tab switching
+
+PRIVACY PROTECTION:
+✅ Local storage only - no data leaves your device
+✅ No external servers or tracking
+✅ Automatic data cleanup
+✅ Full user control over data
+✅ Minimal required permissions
+
+Perfect for power users who want efficient tab navigation while maintaining complete privacy.

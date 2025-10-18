@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Alternator Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tab Alternator Settings</h1>
+      <p class="subtitle">Configure your tab switching experience</p>
+    </header>
+
+    <main>
+      <section class="settings-section">
+        <h2>Privacy & Data Management</h2>
+        
+        <div class="setting-group">
+          <label for="maxHistorySize">Maximum Tab History Size</label>
+          <select id="maxHistorySize">
+            <option value="25">25 tabs</option>
+            <option value="50" selected>50 tabs</option>
+            <option value="100">100 tabs</option>
+            <option value="200">200 tabs</option>
+          </select>
+          <p class="help-text">Maximum number of tabs to keep in history. Older tabs are automatically removed.</p>
+        </div>
+
+        <div class="setting-group">
+          <label for="dataRetentionDays">Data Retention Period</label>
+          <select id="dataRetentionDays">
+            <option value="7">7 days</option>
+            <option value="14">14 days</option>
+            <option value="30" selected>30 days</option>
+            <option value="90">90 days</option>
+          </select>
+          <p class="help-text">How long to keep tab history before automatic cleanup.</p>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Keyboard Shortcuts</h2>
+        
+        <div class="shortcut-info">
+          <div class="shortcut-item">
+            <span class="key">Ctrl+Shift+Tab</span>
+            <span class="description">Alternate to next recently visited tab</span>
+          </div>
+        </div>
+        
+        <p class="help-text">
+          You can customize keyboard shortcuts in Chrome's extension settings:
+          <br>
+          <a href="chrome://extensions/shortcuts" target="_blank">chrome://extensions/shortcuts</a>
+        </p>
+      </section>
+
+      <section class="settings-section">
+        <h2>Privacy Information</h2>
+        
+        <div class="privacy-details">
+          <div class="privacy-item">
+            <span class="icon">🔒</span>
+            <div>
+              <strong>Local Storage Only</strong>
+              <p>All data is stored locally on your device. No information is sent to external servers.</p>
+            </div>
+          </div>
+          
+          <div class="privacy-item">
+            <span class="icon">🗑️</span>
+            <div>
+              <strong>Automatic Cleanup</strong>
+              <p>Old tab history is automatically deleted based on your retention settings.</p>
+            </div>
+          </div>
+          
+          <div class="privacy-item">
+            <span class="icon">👤</span>
+            <div>
+              <strong>No Personal Data</strong>
+              <p>We only track tab URLs, domains, and visit times. No personal information is collected.</p>
+            </div>
+          </div>
+          
+          <div class="privacy-item">
+            <span class="icon">⚙️</span>
+            <div>
+              <strong>Full Control</strong>
+              <p>You can clear all data at any time using the "Clear All Data" button below.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Data Management</h2>
+        
+        <div class="data-controls">
+          <div class="data-info">
+            <div class="info-item">
+              <span class="label">Current Tab History:</span>
+              <span id="currentHistoryCount" class="value">0</span>
+            </div>
+            <div class="info-item">
+              <span class="label">Storage Used:</span>
+              <span id="storageUsed" class="value">0 KB</span>
+            </div>
+          </div>
+          
+          <div class="action-buttons">
+            <button id="exportDataBtn" class="secondary-btn">
+              <span class="icon">📤</span>
+              Export Data
+            </button>
+            <button id="importDataBtn" class="secondary-btn">
+              <span class="icon">📥</span>
+              Import Data
+            </button>
+            <button id="clearAllDataBtn" class="danger-btn">
+              <span class="icon">🗑️</span>
+              Clear All Data
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="save-controls">
+        <button id="saveBtn" class="primary-btn">Save Settings</button>
+        <button id="resetBtn" class="secondary-btn">Reset to Defaults</button>
+      </div>
+      
+      <div class="version-info">
+        <p>Tab Alternator v1.0.0 | <a href="#" id="privacyPolicyLink">Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

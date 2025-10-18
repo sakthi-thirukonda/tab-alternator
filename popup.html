@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Alternator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tab Alternator</h1>
+      <p class="privacy-badge">🔒 Local Storage Only</p>
+    </header>
+
+    <div class="main-content">
+      <div class="current-status">
+        <div class="status-item">
+          <span class="label">Recent Tabs:</span>
+          <span id="tabCount" class="value">0</span>
+        </div>
+        <div class="status-item">
+          <span class="label">Current Position:</span>
+          <span id="currentPosition" class="value">-</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="alternateBtn" class="primary-btn">
+          <span class="icon">🔄</span>
+          Alternate Tabs
+        </button>
+        <button id="refreshBtn" class="secondary-btn">
+          <span class="icon">🔄</span>
+          Refresh
+        </button>
+      </div>
+
+      <div class="recent-tabs">
+        <h3>Recent Tabs</h3>
+        <div id="tabList" class="tab-list">
+          <div class="loading">Loading...</div>
+        </div>
+      </div>
+
+      <div class="privacy-info">
+        <h4>Privacy Protection</h4>
+        <ul>
+          <li>✅ Data stored locally only</li>
+          <li>✅ No external servers</li>
+          <li>✅ Auto-cleanup after 30 days</li>
+          <li>✅ No personal data collected</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <button id="optionsBtn" class="link-btn">Settings</button>
+      <button id="clearDataBtn" class="link-btn danger">Clear Data</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
