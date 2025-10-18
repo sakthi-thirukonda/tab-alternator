@@ -21,7 +21,7 @@ A privacy-first Chrome extension that allows you to alternate between tabs in th
 ## Usage
 
 ### Basic Usage
-- Use **Ctrl+Shift+Tab** to alternate between recently visited tabs
+- Use **Ctrl+Shift+A** to alternate between recently visited tabs
 - Click the extension icon to see recent tabs and manually switch
 - Access settings through the extension popup
 
